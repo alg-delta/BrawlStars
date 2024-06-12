@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/BrawlStars/static/css/main.46ea74e3.css",
+    "main.js": "/BrawlStars/static/js/main.733adc32.js",
+    "static/js/453.5f732585.chunk.js": "/BrawlStars/static/js/453.5f732585.chunk.js",
+    "index.html": "/BrawlStars/index.html",
+    "main.46ea74e3.css.map": "/BrawlStars/static/css/main.46ea74e3.css.map",
+    "main.733adc32.js.map": "/BrawlStars/static/js/main.733adc32.js.map",
+    "453.5f732585.chunk.js.map": "/BrawlStars/static/js/453.5f732585.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.46ea74e3.css",
+    "static/js/main.733adc32.js"
+  ]
+}
