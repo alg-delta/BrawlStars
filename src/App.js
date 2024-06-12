@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Game from "./components/Game";
+import End from "./components/End";
+import Start from "./components/Start";
+
+import { useState } from "react";
+import { GameContext } from "./GameContext";
 
 function App() {
+  const [gameStatus, setGameStatus] = useState("start");
+  const [score, setScore] = useState(0);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className="header">тест</h1>
+      <GameContext.Provider
+        value={{ gameStatus, setGameStatus, score, setScore }}
+      >
+        {gameStatus === "start" && <Start />}
+        {gameStatus === "game" && <Game />}
+        {gameStatus === "end" && <End />}
+      </GameContext.Provider>
     </div>
   );
 }
